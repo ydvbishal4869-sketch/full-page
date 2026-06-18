@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexGen | Student Event Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="#home" class="brand nav-btn" data-page="home" aria-label="NexGen home">
+      <span class="brand-mark">NX</span>
+      NexGen
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-btn active" data-page="home">Home</a></li>
+      <li><a href="#portfolio" class="nav-btn" data-page="portfolio">Portfolio</a></li>
+      <li><a href="#read-pdf" class="nav-btn" data-page="read-pdf">Read PDF</a></li>
+      <li><a href="#enroll" class="nav-btn" data-page="enroll">Enroll</a></li>
+      <li><a href="#contact" class="nav-btn" data-page="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HOME PAGE VIEW -->
+    <section class="page-view active-view" id="home" data-view="home">
+      <header class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">🎓 Student Event Management Platform</div>
+            <h1>Elevate your <span>campus life</span></h1>
+            <p>Discover upcoming events, enroll in activities, and master web coding through interactive environments.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="button" id="exploreEventsBtn">Explore Events ↓</button>
+              <button class="btn btn-secondary" type="button" id="tryDemosBtn">Try Demos →</button>
+            </div>
+            <div class="event-ticker" aria-label="Animated event banner">
+              <div class="ticker-track">
+                <span>Cyber Security Hackathon</span>
+                <span>Programming Competition</span>
+                <span>UI/UX Design Competition</span>
+                <span>AI Innovation Expo</span>
+                <span>Robotics Workshop</span>
+                <span>Cloud Computing Bootcamp</span>
+                <span>Startup Pitch Day</span>
+                <span>Web Coding Sprint</span>
+                <span>Cyber Security Hackathon</span>
+                <span>Programming Competition</span>
+                <span>UI/UX Design Competition</span>
+                <span>AI Innovation Expo</span>
+                <span>Robotics Workshop</span>
+                <span>Cloud Computing Bootcamp</span>
+                <span>Startup Pitch Day</span>
+                <span>Web Coding Sprint</span>
+              </div>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Featured event">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Students collaborating at a technology event" />
+            <h3>Learn. Compete. Connect.</h3>
+            <p>Manage student activities, join campus events, and practice HTML, CSS, JavaScript, and Bootstrap in one place.</p>
+          </aside>
+        </div>
+      </header>
+
+      <section class="events hidden-events" id="eventsSection">
+        <div class="section-head">
+          <span class="tag">Upcoming events</span>
+          <h2>Choose your next campus challenge</h2>
+          <p>These upcoming NexGen activities appear when the user clicks the Explore Events button.</p>
+        </div>
+        <div class="event-grid">
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Cyber security hackathon" />
+            <div class="event-card-content">
+              <span class="event-date">July 05, 2026</span>
+              <h3>Cyber Security Hackathon</h3>
+              <p>Defend systems, solve CTF puzzles, and learn ethical security skills with your team.</p>
+              <button class="text-button open-enroll" type="button">Enroll now →</button>
+            </div>
+          </article>
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Programming competition" />
+            <div class="event-card-content">
+              <span class="event-date">July 12, 2026</span>
+              <h3>Programming Competition</h3>
+              <p>Compete in logic, algorithms, debugging, and speed coding rounds.</p>
+              <button class="text-button open-enroll" type="button">Enroll now →</button>
+            </div>
+          </article>
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=900&q=80" alt="UI UX design competition" />
+            <div class="event-card-content">
+              <span class="event-date">July 19, 2026</span>
+              <h3>UI/UX Design Competition</h3>
+              <p>Create modern, user-friendly interfaces and present your design thinking process.</p>
+              <button class="text-button open-enroll" type="button">Enroll now →</button>
+            </div>
+          </article>
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=900&q=80" alt="Robotics workshop" />
+            <div class="event-card-content">
+              <span class="event-date">August 02, 2026</span>
+              <h3>Robotics Workshop</h3>
+              <p>Build basic robots, work with sensors, and understand automation concepts.</p>
+              <button class="text-button open-enroll" type="button">Enroll now →</button>
+            </div>
+          </article>
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=900&q=80" alt="Startup pitch day" />
+            <div class="event-card-content">
+              <span class="event-date">August 09, 2026</span>
+              <h3>Startup Pitch Day</h3>
+              <p>Pitch your innovative idea to mentors, judges, and student investors.</p>
+              <button class="text-button open-enroll" type="button">Enroll now →</button>
+            </div>
+          </article>
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Cloud computing bootcamp" />
+            <div class="event-card-content">
+              <span class="event-date">August 16, 2026</span>
+              <h3>Cloud Computing Bootcamp</h3>
+              <p>Understand deployment, hosting, databases, and cloud service fundamentals.</p>
+              <button class="text-button open-enroll" type="button">Enroll now →</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- PORTFOLIO PAGE VIEW -->
+    <section class="page-view" id="portfolio" data-view="portfolio">
+      <header class="page-hero">
+        <span class="tag">Portfolio</span>
+        <h1>Practice web coding interactively</h1>
+        <p>Explore simple demos for HTML, CSS, JavaScript, and Bootstrap-style components.</p>
+      </header>
+      <section class="portfolio-section">
+        <div class="portfolio-grid">
+          <article class="demo-card">
+            <div class="demo-top">
+              <h3>1. HTML Demo</h3>
+              <span class="demo-badge">HTML</span>
+            </div>
+            <p>HTML gives structure to the page. This demo only uses simple HTML elements in the preview area.</p>
+            <div class="html-preview">
+              <h4>Campus Coding Club</h4>
+              <p>Welcome to NexGen. Register for events, read reports, and learn coding.</p>
+              <ul>
+                <li>Headings</li>
+                <li>Paragraphs</li>
+                <li>Lists</li>
+              </ul>
+            </div>
+            <pre class="code-box">&lt;h4&gt;Campus Coding Club&lt;/h4&gt;
+&lt;p&gt;Welcome to NexGen.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Headings&lt;/li&gt;
+  &lt;li&gt;Paragraphs&lt;/li&gt;
+  &lt;li&gt;Lists&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-top">
+              <h3>2. CSS Demo</h3>
+              <span class="demo-badge">CSS</span>
+            </div>
+            <p>CSS styles the page. This demo uses CSS gradients, animation, rounded corners, and shadow.</p>
+            <div class="css-demo-box">Animated CSS Banner</div>
+            <pre class="code-box">.css-demo-box {
+  background: linear-gradient(45deg, #635bff, #00d2ff);
+  border-radius: 20px;
+  animation: rotateHue 5s linear infinite;
+}</pre>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-top">
+              <h3>3. JavaScript Demo</h3>
+              <span class="demo-badge">JS</span>
+            </div>
+            <p>Click the button to generate a random gradient value and apply it to the preview box.</p>
+            <div class="gradient-preview" id="gradientPreview">Random Gradient</div>
+            <span class="gradient-value" id="gradientValue">Generated Gradient Values: linear-gradient(45deg, #dc3545, #00d2ff)</span>
+            <button class="btn btn-primary" type="button" id="generateGradient">Generate Random Color</button>
+            <pre class="code-box">const gradient = `linear-gradient(45deg, ${color1}, ${color2})`;</pre>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-top">
+              <h3>4. Bootstrap Demo</h3>
+              <span class="demo-badge">Bootstrap</span>
+            </div>
+            <p>This preview demonstrates Bootstrap-style components used in a page: alert, card body, and buttons.</p>
+            <div class="bootstrap-preview">
+              <div class="bs-alert">Bootstrap alert: Event registration opened successfully!</div>
+              <div class="bs-body">
+                <h4>Bootstrap Card</h4>
+                <p>A responsive component layout with button utilities.</p>
+                <div class="bs-btn-group">
+                  <span class="bs-btn bs-primary">Primary</span>
+                  <span class="bs-btn bs-success">Success</span>
+                  <span class="bs-btn bs-warning">Warning</span>
+                </div>
+              </div>
+            </div>
+            <pre class="code-box">&lt;div class="alert alert-info"&gt;...&lt;/div&gt;
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;</pre>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- READ PDF PAGE VIEW -->
+    <section class="page-view" id="read-pdf" data-view="read-pdf">
+      <header class="page-hero">
+        <span class="tag">Read PDF</span>
+        <h1>Course reports and study materials</h1>
+        <p>Add your own reports later. Each topic has a ready PDF path and a local PDF selector for preview.</p>
+      </header>
+      <section class="pdfs">
+        <div class="pdf-grid">
+          <article class="pdf-card">
+            <h3>Fullstacks</h3>
+            <div class="pdf-art pdf-art-fullstack">
+              <span class="pdf-art-chip">Report ready</span>
+              <strong>Fullstacks.pdf</strong>
+              <p>Campus notes, project highlights, and a clean local preview.</p>
+              <div class="pdf-art-meta">
+                <span>PDF</span>
+                <span>Local file</span>
+              </div>
+            </div>
+            <p>Open the report at <strong>report/Fullstacks.pdf</strong>.</p>
+            <a class="mini-link" href="report/Fullstacks.pdf" target="_blank">Open PDF →</a>
+          </article>
+          <article class="pdf-card">
+            <h3>HTML</h3>
+            <div class="pdf-art pdf-art-html">
+              <span class="pdf-art-chip">Core topic</span>
+              <strong>HTML.pdf</strong>
+              <p>Structure, semantics, and page building essentials.</p>
+              <div class="pdf-art-meta">
+                <span>Markup</span>
+                <span>Report</span>
+              </div>
+            </div>
+            <p>Open the report at <strong>report/HTML.pdf</strong>.</p>
+            <a class="mini-link" href="report/HTML.pdf" target="_blank">Open PDF →</a>
+          </article>
+          <article class="pdf-card">
+            <h3>CSS</h3>
+            <div class="pdf-art pdf-art-css">
+              <span class="pdf-art-chip">Visual style</span>
+              <strong>CSS.pdf</strong>
+              <p>Layouts, gradients, spacing, and responsive presentation.</p>
+              <div class="pdf-art-meta">
+                <span>Design</span>
+                <span>Report</span>
+              </div>
+            </div>
+            <p>Open the report at <strong>report/CSS.pdf</strong>.</p>
+            <a class="mini-link" href="report/CSS.pdf" target="_blank">Open PDF →</a>
+          </article>
+          <article class="pdf-card">
+            <h3>JavaScript</h3>
+            <div class="pdf-art pdf-art-js">
+              <span class="pdf-art-chip">Interactive</span>
+              <strong>JavaScript.pdf</strong>
+              <p>Logic, events, and dynamic behavior demonstrations.</p>
+              <div class="pdf-art-meta">
+                <span>Script</span>
+                <span>Report</span>
+              </div>
+            </div>
+            <p>Open the report at <strong>report/JavaScript.pdf</strong>.</p>
+            <a class="mini-link" href="report/JavaScript.pdf" target="_blank">Open PDF →</a>
+          </article>
+          <article class="pdf-card">
+            <h3>Bootstrap</h3>
+            <div class="pdf-art pdf-art-bs">
+              <span class="pdf-art-chip">Component kit</span>
+              <strong>Bootstrap.pdf</strong>
+              <p>Utility classes, cards, buttons, and responsive blocks.</p>
+              <div class="pdf-art-meta">
+                <span>UI</span>
+                <span>Report</span>
+              </div>
+            </div>
+            <p>Open the report at <strong>report/Bootstrap.pdf</strong>.</p>
+            <a class="mini-link" href="report/Bootstrap.pdf" target="_blank">Open PDF →</a>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- ENROLL PAGE VIEW -->
+    <section class="page-view" id="enroll" data-view="enroll">
+      <header class="page-hero">
+        <span class="tag">Enroll</span>
+        <h1>Login and enroll in NexGen events</h1>
+        <p>Register your interest for hackathons, competitions, workshops, and bootcamps.</p>
+      </header>
+      <section class="enroll-contact">
+        <div class="single-form-wrap">
+          <article class="form-card">
+            <h3>Enroll Login Form</h3>
+            <p class="muted-text">Login or enroll for upcoming student events.</p>
+            <form id="enrollForm">
+              <div>
+                <label for="studentName">Full Name</label>
+                <input id="studentName" name="studentName" type="text" placeholder="Enter your full name" required />
+              </div>
+              <div>
+                <label for="studentEmail">Email</label>
+                <input id="studentEmail" name="studentEmail" type="email" placeholder="student@example.com" required />
+              </div>
+              <div>
+                <label for="eventSelect">Select Event</label>
+                <select id="eventSelect" name="eventSelect" required>
+                  <option value="">Choose an event</option>
+                  <option>Cyber Security Hackathon</option>
+                  <option>Programming Competition</option>
+                  <option>UI/UX Design Competition</option>
+                  <option>Robotics Workshop</option>
+                  <option>Startup Pitch Day</option>
+                  <option>Cloud Computing Bootcamp</option>
+                </select>
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Create password" required />
+              </div>
+              <button class="btn btn-primary" type="submit">Enroll / Login</button>
+              <div class="submit-message" id="enrollMessage">Enrollment request received. Welcome to NexGen!</div>
+            </form>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- CONTACT PAGE VIEW -->
+    <section class="page-view" id="contact" data-view="contact">
+      <header class="page-hero">
+        <span class="tag">Contact</span>
+        <h1>Contact NexGen</h1>
+        <p>Send your questions about events, demos, enrollment, or PDF reports.</p>
+      </header>
+      <section class="enroll-contact">
+        <div class="single-form-wrap">
+          <article class="contact-card">
+            <h3>Contact Information</h3>
+            <p class="muted-text">Have questions about events, demos, or PDFs? Send us a message.</p>
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="icon">✉</span>
+                <div>
+                  <strong>Email</strong><br />
+                  <a class="mini-link" href="mailto:NexGen@gmail.com">NexGen@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">☎</span>
+                <div>
+                  <strong>Phone</strong><br />
+                  <a class="mini-link" href="tel:+011234567">+01 1234567</a> / <a class="mini-link" href="tel:+9779856321470">+977 9856321470</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">📍</span>
+                <div>
+                  <strong>Office</strong><br />
+                  NexGen Student Event Management Desk
+                </div>
+              </div>
+            </div>
+            <form id="contactForm">
+              <div>
+                <label for="contactName">Full Name</label>
+                <input id="contactName" name="contactName" type="text" placeholder="Your full name" required />
+              </div>
+              <div>
+                <label for="contactEmail">Email</label>
+                <input id="contactEmail" name="contactEmail" type="email" placeholder="your@email.com" required />
+              </div>
+              <div>
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <div class="submit-message" id="contactMessage">Thank you! Your message is ready for NexGen.</div>
+            </form>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 NexGen Student Event Management. Built with HTML, CSS, JavaScript, and Bootstrap-style components.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
